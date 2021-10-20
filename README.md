@@ -37,5 +37,26 @@
             esc值得是esc键被按下时执行方法
                 <input type="text" @keyup.enter="submit">
     4、双向数据绑定指令
-        v-model
-        `
+        v-model常用于
+            1.input输入框
+                type="radio"
+                type="checkbox"
+                type="xxx"
+            2.textarea
+            3.select
+        v-model指令的修饰符
+            .number : 自动将用户的输入值转为数值类型
+            .trim : 自动过滤用户输入的首尾空白字符
+            .lazy : 在"change"时而非"input"时更新
+    5、条件渲染指令
+        条件渲染指令有两个：v-if、v-show
+        区别：v-if每次都会动态的移除跟创建元素，v-show则通过dispaly来控制
+        在实际开发中，绝大多数情况，不用考虑性能问题，直接使用v-if就好了
+    6、列表渲染指令
+        v-for:xxx="(item,index) in <list>" :key="<list>.id"
+        key的注意事项
+            1.key 的值只能是字符串或数字类型
+            2.key 的值必须具有唯一性
+            3.建议把属性项id属性的值作为key的值
+            4.使用index的值当作key 的值没有任何意义，因为index的值不具有唯一性
+            5.建议使用v-for指令时一定要指定key的值
