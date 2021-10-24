@@ -1,6 +1,8 @@
 <template>
   <div class="right-container">
     <h3>Right 组件</h3>
+    <hr>
+    <Count></Count>
   </div>
 </template>
 

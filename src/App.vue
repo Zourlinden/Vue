@@ -5,12 +5,21 @@
 
     <div class="box">
       <!-- 渲染 Left 组件和 Right 组件 -->
+      <Left></Left>
+      <Right></Right>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Left from '@/components/Left.vue'
+import Right from '@/components/Right.vue'
+export default {
+  components: {
+    Left,
+    Right
+  }
+}
 </script>
 
 <style lang="less">
