@@ -1,19 +1,4 @@
 # demo-cart
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    购物车案例
+    主要对父子组件、兄弟组件传值的复习
+    对数组列表的some、every、reduce方法的使用
